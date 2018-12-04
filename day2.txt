@@ -1,0 +1,8 @@
+even though i code in java(I know the syntax to code because i already know C and JS) , i dont know the internal working of Java , so today i decided to learn Java concepts
+JAVA:
+1.Scanner Class
+2.Variables
+Others:
+1.memory layout(internal implementation)
+2.function of call stack
+3.some interview tips

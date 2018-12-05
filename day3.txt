@@ -1,0 +1,7 @@
+My progress for today:
+1.Instance variables
+2.Encapsulation basics
+3.shadowing
+4.Static variables
+5.data types
+6.Type casting

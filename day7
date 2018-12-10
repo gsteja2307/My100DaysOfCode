@@ -1,0 +1,46 @@
+today i started the oops concepts learned about :
+1.classes and objects
+2.how object is created and how memory is being used in heap and stack by the program
+3.methods
+4.scope
+6.method overloading
+
+and also i solved 2 coding questions 1 using array list and other using hashmap(studied its syntax , will learn implementation soon)
+
+Given a collection of cities of size N that represents cities traveled by Rishu filled from index 0 to N-1.  You are required to print the return journey path with arrows in between.
+void printReturnJourneyPath(ArrayList<String> path) {
+    int len=path.size();
+  //System.out.println(len);
+  	String str=new String("");
+    while(len>1){
+      str=str+(path.get(len-1))+"->";
+      len--;
+    }
+  if(len==1)
+  	str=str+path.get(0);
+  System.out.print(str);
+}
+
+
+
+Given an array of integers, remove duplicates number from array, leaving only unique numbers back, Modify the given array and also return the new size of the array.
+int removeDuplicates(int a[]) 
+{
+HashMap<Integer, Integer> hmap =new HashMap<Integer, Integer>();
+  int i=0;
+  int j=0;
+  int len=a.length;
+  while(j<len){
+    if(hmap.containsValue(a[j])){
+     j++;
+      continue;
+    }
+    
+    hmap.put(i++,a[j]);
+  j++;
+  } 
+  int size=hmap.size();
+  for(int k=0;k<size;k++)
+    a[k]=hmap.get(k);
+  return size;
+}	
